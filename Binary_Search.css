@@ -1,0 +1,246 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(2, 1, 3) 100%);
+    background-image:black;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    
+    background-size:100% 100%;
+}
+
+
+.head{
+    position: absolute; top: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px rgb(29, 170, 160);
+    color: #b8b8d6;
+    
+}
+
+.TITLE{
+    text-align: center;
+    color: rgb(237, 10, 10);
+    font-weight:normal;
+    padding-top: 0%;
+    text-transform: capitalize;
+    position: 0.5em;
+    margin: 0 0 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:150px;
+    font-weight: 300;
+}
+
+.title {
+     text-align: center;
+    color: rgb(214, 255, 11);
+    padding-top: 0%;
+    top: 10px;
+    font-weight:normal;
+    margin: 0 0 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:50px;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.cell {
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl(45, 11%, 7%);
+    background: rgb(236, 236, 226);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 5px;
+}
+
+.cell:not(:last-child) {
+    margin-right: 0.7rem;
+}
+
+.started .cell {
+    cursor: auto;
+}
+
+.cell.low-cell {
+    background: hsl(205, 93%, 46%);
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cell.mid-cell {
+    background: hsl(277, 100%, 58%);
+    color: rgb(16, 15, 15);
+}
+
+.cell.high-cell {
+    background: hsl(341, 82%, 51%);
+    color: rgb(7, 7, 7);
+}
+
+.cell.target-cell {
+    background: hsl(106, 72%, 41%);
+    color: rgb(20, 19, 19);
+}
+
+.cell ul {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.step-marker {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(219, 223, 147);
+    color: black;
+    padding: 0.5rem 0.6rem;
+}
+
+.step-marker__low {
+    color: hsl(180, 7%, 3%);
+    font-weight: 500;
+    font-size:20px;
+}
+
+.step-marker__mid {
+    color: black;
+    font-weight: 500;
+    font-size:20px;
+}
+
+.step-marker__high {
+    color: hsl(0, 0%, 2%);
+    font-weight: 500;
+    font-size:20px;
+}
+
+.step-marker__target {
+    color: hsl(120, 6%, 3%);
+    font-weight: 500;
+    font-size:20px;
+}
+
+.cell.reject {
+    opacity: 0.4;
+    background: #ccc;
+    transform: translateY(25%);
+}
+
+.stepper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.next {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border: 2px solid rgb(226, 254, 15);
+    border-radius: 30%;
+    color: rgba(245, 196, 20, 0.916);
+    background: transparent;
+    cursor: pointer;
+    transition: all 150ms;
+    outline: none;
+    background: rgb(0, 157, 255);
+}
+
+.next:hover {
+    border-color: hsla(35, 90%, 25%, 1);
+    color: hsla(35, 90%, 25%, 1);
+}
+
+.next {
+    margin-left: 2rem;
+}
+
+.next.hide {
+    display: none;
+}
+
+.history-list {
+    display: inline-flex;
+}
+
+.history__low,
+.history__mid,
+.history__high {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    padding: 1.6rem;
+    border-radius: 0.1rem;
+    font-size: 20px;
+}
+
+.history-item {
+    background: hsl(35, 91%, 91%);
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 0.3rem;
+    padding: 0.4rem;
+    font-size:0.8rem;
+    border-radius:0.1rem;
+}
+
+.history-item li:not(:last-child) {
+    margin-right: 0.4rem;
+}
+
+.history__low {
+    background: hsl(205, 93%, 46%);
+}
+
+.history__mid {
+    background: hsl(277, 100%, 58%);
+}
+
+.history__high {
+    background: hsl(341, 82%, 51%);
+}
+
+.templates {
+    display: none;
+}
+

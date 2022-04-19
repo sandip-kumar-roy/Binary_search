@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+#digital-clock {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(135, 133, 64) 3%);
+    
+    position:absolute;
+    top:0;
+left:0;
+ width: 17.67%;
+ font-family:cursive;
+ font-size: 50px;
+ font-weight: 700;
+ 
+}

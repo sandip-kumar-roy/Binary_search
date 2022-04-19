@@ -1,2 +1,2 @@
-# Binary_search
-A Binary search simulator used to visualize binary search
+# Binary_search.github.io
+BINARY SEARCH VISUALIZATION using html ,css,javascript

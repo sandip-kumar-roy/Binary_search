@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="explanaton.css">
+    <title>Document</title>
+</head>
+<body>
+        
+        <div class="steps">
+            <h1 class="line-1 anim-typewriter">BINARY SEARCH</h1>
+            <h2 class="def">DEFINITION :-</h2>
+            <p class="first" id="definition">
+                Binary Search is a searching algorithm for finding an element's 
+                position in a sorted array.
+            </p>
+        </div>
+        <hr>
+        <h2 class="entry-title"><br>STEPS WE USE IN BINARY SEARCH</h2>
+    </div>
+    <div class="entry-content">
+        <p>
+            In this approach, the element is always searched in the middle of a portion of an array.
+            <br><br><strong>Binary search can be implemented only 
+                on a sorted list of items. If the elements are not sorted already, 
+                we need to sort them first. </strong> 
+        
+        </p>
+        <p class="note-tip">
+            "Binary search can be implemented only 
+            on a sorted list of items. If the elements are not sorted already, 
+            we need to sort them first."
+        </p>
+        <hr>
+        <h2 class="working" id="working">BINARY SEARCH WORKING</h2>
+         <p>
+            Binary Search Algorithm can be implemented in
+             two ways which are discussed below:-
+         </p>
+         <ol>
+             <li>
+                 <b>ITERATIVE METHOD</b>
+             </li>
+             <br>
+             <li>
+                <b>RECURSIVE METHOD</b>
+                
+            </li>
+
+         </ol>
+         <p>
+             "The Recursive method follows"
+             <a class="link" href="https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/">DIVIDE And CONQUER</a>
+             "approach";
+
+         </p>
+         <p>
+             The most general steps for both the methods are:-
+         </p>
+         <ol>
+             <li>
+                 "The array in which searching is to be performed is :
+                 <figure>
+                     <img class="initial-img" alt="initial" src="./img/initial.png">
+                     <figcaption>INITIAL ARRAY BLOCKS IN SIMULATOR</figcaption>
+                 </figure>
+                 <br><br><br><br><br>
+                 <strong>"Let" <code>TARGET = 16</code>
+                 "be the element to be searched."</strong><br><br>
+                 
+             </li>
+            
+             <li>
+                Set two pointers low and high at the lowest and the highest positions respectively.
+                <figure>
+                    <img class="initial-img" alt="initial" src="./img/TARGET.png">
+                    <figcaption>TWO POINTERS LOW and HIGH</figcaption>
+                </figure>
+             </li>
+             <br><br><br><br><br>
+             <li>
+                Calculate the <code>MID = (HIGH+LOW) / 2 </code><br><br> or<br><br> <code>MID = LOW + ( HIGH - LOW ) / 2</code> . <br><br>or <br><br>you can use <code>" >> "</code>  operator for fast divison operation
+                <br>
+                Now,we got
+                <code>arr[MID] = 196</code>
+                <figure>
+                    <img class="mid-element" alt="initial" src="./img/MID.png">
+                    <figcaption>MID ELEMENT</figcaption>
+                </figure>
+             </li>
+             <br><br><br><br><br>
+             <li>
+                "If <code>TARGET == MID</code>, then return <code>MID</code> . Else, compare the element to be searched with <code>MID</code>. "
+                <figure>
+                    <img class="initial-img" alt="initial" src="./img/TARGET.png">
+                    <figcaption>TARGET SELECTED TO SEARCH</figcaption>
+                </figure>
+             </li>
+             <br><br><br><br><br>
+             <li>
+                 "If"
+                 <code>TARGET > MID</code>
+                 ", compare "
+                 <var>TARGET</var>
+                 " with the middle element of the elements on the right side of "
+                 <var>MID</var>
+                 This is done by setting "
+                 <var>LOW</var>
+                 to
+                 <code>LOW = MID + 1</code><br><br>
+             </li>
+             <li>
+                Else, compare 
+                <var>TARGET</var>
+                with the middle element of the elements on the left side of 
+                <var>HIGH</var>
+                . This is done by setting 
+                <var>HIGH</var>
+                to
+                <code>HIGH = MID -1</code><br>
+                <figure>
+                    <img class="initial-img" alt="initial" src="./img/aftercompare.png">
+                    <figcaption>AFTER COMPARISON</figcaption>
+                </figure>
+
+             </li>
+             <br><br><br><br><br>
+             <li>
+                Repeat steps 3 to 6 until <code>LOW</code> meets <code>HIGH</code> and we FOUND our <code>TARGET</code>
+                <figure>
+                    <img class="final-img" alt="initial" src="./img/found.png">
+                    <figcaption>LOW == HIGH and MID == TARGET !! found</figcaption>
+                </figure>
+             </li>
+
+         </ol>
+         <br><br><br><br>
+         <hr>
+         <img class="time-comp" src="./img/time complexity.png">
+    </div>
+    
+    
+</body>
+</html>
