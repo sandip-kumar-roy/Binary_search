@@ -66,11 +66,20 @@
             *Javascript (ES6) code snippet, 
             *auto complete tag 
 
-      3) Clone this file using 
+      3) Clone this file by direct downloading
+                       or
+         using git clone command and paste the https link
 
-            git clone 
+      4) Extract the file into your desktop 
+      
+      5) Then open the folder into vs code
 
-               
+      6) Then right click on the " index.html " file
+           * click 
+               => Live preview
+       
+!!!
+**HURRAH. GOOD TO GO**               
                     
                   
                    
