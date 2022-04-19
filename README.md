@@ -56,6 +56,7 @@
 # 🤔STEPS TO RUN🤔
 
      1) Install VS code on your computer
+
      2) Install VS Code extensions for code formatting
        
 
