@@ -11,7 +11,7 @@
 
 # 🤠 CONTENTS 🤠 :-
 
-     1) HOME PAGE
+     1) HOME PAGE🙏🙏
 
           * It consists of three button and an animated heading of 
             binary search visualisation
@@ -21,7 +21,7 @@
           * Hovering effects are also present
 
 
-      2) EXPLANATION  PAGE
+      2) EXPLANATION  PAGE✍️✍️
 
            * it consist of detailed explanation how the binary 
               search simulator works
@@ -31,7 +31,7 @@
            * Time Complexity of Binary search 
 
    
-       3) LIVE DEMO PAGE
+       3) LIVE DEMO PAGE🧐🧐
 
             * It consist of the simulation part where 
              
