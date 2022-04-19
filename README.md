@@ -9,7 +9,7 @@
        https://sandip-kumar-roy.github.io/Binary_search/
 
 
-# 🤠🤠 CONTENTS 🤠🤠 :-
+# 🤠 CONTENTS 🤠 :-
 
      1) HOME PAGE
 
@@ -58,10 +58,18 @@
      1) Install VS code on your computer
      2) Install VS Code extensions for code formatting
        
-              * Prettier
-              * Auto complete tag
-              * Bracket Pair Colorizer
-              *
+
+            *Prettier, 
+            *Html Css Snippet ,
+            *Live Server, 
+            *Intellisense for css class names in html
+            *Javascript (ES6) code snippet, 
+            *auto complete tag 
+
+      3) Clone this file using 
+
+            git clone 
+
                
                     
                   
