@@ -4,6 +4,12 @@
       In this we are going to learn by visualising how in background things 
       happen in binary search .
 
+
+# NOTE🥶🥶
+
+**NOT FOR MOBILE VERSION ONLY FOR DESKTOP/LAPTOP**
+
+
 # 😍 LIVE LINK 😍
 
        https://sandip-kumar-roy.github.io/Binary_search/
