@@ -15,9 +15,9 @@
     font-weight: 700;
     text-align: center;
     vertical-align: text-top;
-    font-size: 130px;
-    padding-top: 20px;
-    font-family: Hack, sans-serif;
+    font-size: 100px;
+    padding-top: 10px;
+    font-family:'Times New Roman', Times, serif;
     text-transform: uppercase;
     background: linear-gradient(90deg, #000, #fff, #000);
     letter-spacing: 5px;
