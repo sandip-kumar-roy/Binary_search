@@ -5,7 +5,7 @@
       happen in binary search .
 
 
-# NOTE🥶🥶
+# NOTE ⬇️⬇️
 
 **NOT FOR MOBILE VERSION ONLY FOR DESKTOP/LAPTOP**
 
@@ -86,7 +86,11 @@
                => Live preview
        
 !!!
-**HURRAH. GOOD TO GO**               
+**HURRAH. GOOD TO GO**     
+
+# SOME SCREENSHOTS
+
+
                     
                   
                    
