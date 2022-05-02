@@ -59,6 +59,8 @@
             
             * A digital clock is embedded on the screen to watch
               current time
+              
+            ![image](https://user-images.githubusercontent.com/101457128/166180213-beae7c5a-6ae5-422b-abf4-68e13228ced6.png)
 
 
 # 🤔STEPS TO RUN🤔
